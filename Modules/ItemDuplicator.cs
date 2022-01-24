@@ -25,7 +25,7 @@ namespace PortiaHelper.Modules
 		}
 
 		void Update() {
-			if (Input.GetKeyUp(KeyCode.KeypadMinus) && !_inDupMode) {
+			if (Input.GetKeyUp(KeyCode.Minus) && !_inDupMode) {
 				_storage.DeleteItem();
 			}
 
