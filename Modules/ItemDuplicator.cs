@@ -25,11 +25,11 @@ namespace PortiaHelper.Modules
 		}
 
 		void Update() {
-			if (Input.GetKeyUp(KeyCode.KeypadMinus) && !_inDupMode) {
+			if (Input.GetKeyUp(KeyCode.Minus) && !_inDupMode) {
 				_storage.DeleteItem();
 			}
 
-			if (Input.GetKey(KeyCode.KeypadMultiply) && !_inDupMode) {
+			if (Input.GetKey(KeyCode.Equals) && !_inDupMode) {
 				if (_storage is null) {
 					Main.Logger.Log("Storage is null, can't duplicate!");
 					return;
