@@ -7,7 +7,7 @@ namespace PortiaHelper.Modules
 	class JetPackToggler : MonoBehaviour
 	{
 		void Update() {
-			if (Input.GetKeyUp(KeyCode.Keypad8)) {
+			if (Input.GetKeyUp(KeyCode.BackQuote)) {
 				Module<Player>.Self.ToggleJetPack();
 			}
 		}
