@@ -18,7 +18,7 @@ namespace PortiaHelper.Modules
 		}
 
 		void Update() {
-			if (Input.GetKeyUp(KeyCode.Insert) && !_playerOptions.enabled) {
+			if (Input.GetKeyUp(KeyCode.P) && !_playerOptions.enabled) {
 				_itemSpawner.enabled = !_itemSpawner.enabled;
 			}
 

@@ -29,7 +29,7 @@ namespace PortiaHelper.Modules
 				_storage.DeleteItem();
 			}
 
-			if (Input.GetKey(KeyCode.KeypadMultiply) && !_inDupMode) {
+			if (Input.GetKey(KeyCode.Equals) && !_inDupMode) {
 				if (_storage is null) {
 					Main.Logger.Log("Storage is null, can't duplicate!");
 					return;
